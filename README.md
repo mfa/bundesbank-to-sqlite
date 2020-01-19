@@ -52,7 +52,7 @@ http://localhost:8001/blz/bundesbank_blz?city=Berlin
 http://localhost:8001/blz/bundesbank_blz?zipcode=10117
 ```
 
-(this are the same examples as in depricated [banking_api](https://github.com/opendata-stuttgart/banking-api#example-api-usage))
+(this are the same examples as in deprecated [banking_api](https://github.com/opendata-stuttgart/banking-api#example-api-usage))
 
 
 ## Thanks
