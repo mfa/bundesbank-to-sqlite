@@ -29,10 +29,15 @@ bundesbank-to-sqlite convert blz.db blz-aktuell-xls-data.xlsx
 
 ## Use with [Datasette](https://github.com/simonw/datasette)
 
-run with Datasette:
+install Datasette:
 
 ```
 pip install datasette
+```
+
+run with Datasette:
+
+```
 datasette blz.db
 ```
 
@@ -47,7 +52,7 @@ http://localhost:8001/blz/bundesbank_blz?city=Berlin
 http://localhost:8001/blz/bundesbank_blz?zipcode=10117
 ```
 
-(this are the same examples as in archived [banking_api](https://github.com/opendata-stuttgart/banking-api#example-api-usage)
+(this are the same examples as in depricated [banking_api](https://github.com/opendata-stuttgart/banking-api#example-api-usage))
 
 
 ## Thanks
