@@ -1,0 +1,7 @@
+__pycache__
+*.db
+*.xlsx
+*.egg-info
+.pytest_cache
+build
+dist
