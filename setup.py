@@ -27,7 +27,7 @@ setup(
         bundesbank-to-sqlite=bundesbank_to_sqlite.cli:cli
     """,
     install_requires=[
-        "sqlite-utils~=2.0.1",
+        "sqlite-utils~=3.2.1",
         "click",
         "openpyxl"
     ],
