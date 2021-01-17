@@ -1,6 +1,6 @@
 # Bundesbank to sqlite
 
-![Run Tests](https://github.com/mfa/bundesbank-to-sqlite/workflows/Run%20Tests/badge.svg)
+![Run Tests](https://github.com/mfa/bundesbank-to-sqlite/workflows/Tests/badge.svg)
 
 ## About
 
