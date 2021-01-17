@@ -1,5 +1,7 @@
 # Bundesbank to sqlite
 
+![Run Tests](https://github.com/mfa/bundesbank-to-sqlite/workflows/Run%20Tests/badge.svg)
+
 ## About
 
 The German Bundesbank releases every quarter of a year a list of all banks in Germany.
