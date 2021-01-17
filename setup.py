@@ -27,11 +27,7 @@ setup(
         [console_scripts]
         bundesbank-to-sqlite=bundesbank_to_sqlite.cli:cli
     """,
-    install_requires=[
-        "sqlite-utils~=3.2.1",
-        "click",
-        "openpyxl"
-    ],
+    install_requires=["sqlite-utils~=3.2.1", "click", "openpyxl"],
     extras_require={"test": ["pytest"]},
     tests_require=["bundesbank-to-sqlite[test]"],
 )
