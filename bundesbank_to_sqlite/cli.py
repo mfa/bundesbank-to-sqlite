@@ -1,5 +1,6 @@
-import sqlite_utils
 import click
+import sqlite_utils
+
 from bundesbank_to_sqlite.utils import save_banking_data
 
 

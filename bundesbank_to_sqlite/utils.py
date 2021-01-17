@@ -1,5 +1,5 @@
-from openpyxl import load_workbook
 import click
+from openpyxl import load_workbook
 
 
 def save_banking_data(db, xlsx_path):

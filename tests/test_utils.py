@@ -1,7 +1,8 @@
 import pytest
 import sqlite_utils
-from bundesbank_to_sqlite.utils import save_banking_data
 from openpyxl import Workbook
+
+from bundesbank_to_sqlite.utils import save_banking_data
 
 
 @pytest.fixture
