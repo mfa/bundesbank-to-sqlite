@@ -9,19 +9,19 @@ def save_banking_data(db, xlsx_path):
     ws = wb[wb.sheetnames[0]]
 
     translate_fieldnames = {
-        'Bezeichnung': 'name',
-        'Bank-leitzahl': 'blz',
-        'BIC': 'bic',
-        'PLZ': 'zipcode',
-        'Ort': 'city',
-        'Kurzbezeichnung': 'short_description',
-        'PAN': 'pan',
-        'Prüfziffer-berechnungs-methode': 'check_calculation_method',
-        'Datensatz-nummer': 'dataset_number',
-        'Merkmal': 'merkmal',
-        'Änderungs-kennzeichen': 'change_type',
-        'Bankleitzahl-löschung': 'is_deletion',
-        'Nachfolge-Bankleitzahl': 'following_blz',
+        "Bezeichnung": "name",
+        "Bank-leitzahl": "blz",
+        "BIC": "bic",
+        "PLZ": "zipcode",
+        "Ort": "city",
+        "Kurzbezeichnung": "short_description",
+        "PAN": "pan",
+        "Prüfziffer-berechnungs-methode": "check_calculation_method",
+        "Datensatz-nummer": "dataset_number",
+        "Merkmal": "merkmal",
+        "Änderungs-kennzeichen": "change_type",
+        "Bankleitzahl-löschung": "is_deletion",
+        "Nachfolge-Bankleitzahl": "following_blz",
     }
 
     # translate tablenames to English names
@@ -38,7 +38,8 @@ def save_banking_data(db, xlsx_path):
     ) as progress:
         for row in progress:
             db["bundesbank_blz"].insert(
-                record=dict(zip(field_names, row)), pk="blz", replace=True)
+                record=dict(zip(field_names, row)), pk="blz", replace=True
+            )
 
     if created:
         db["bundesbank_blz"].create_index(["blz"])
