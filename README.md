@@ -1,10 +1,10 @@
 # Bundesbank to sqlite
 
-![Tests](https://github.com/mfa/bundesbank-to-sqlite/workflows/Tests/badge.svg)
+[![Tests](https://github.com/mfa/bundesbank-to-sqlite/actions/workflows/tests.yml/badge.svg)](https://github.com/mfa/bundesbank-to-sqlite/actions/workflows/tests.yml)
 
 ## About
 
-The German Bundesbank releases every quarter of a year a list of all banks in Germany.
+The German Bundesbank releases every quarter of a year a list of all banks in Germany.  
 This script converts the xslx file to a sqlite database.
 
 
@@ -25,7 +25,7 @@ python setup.py install
 ## Convert downloaded file
 
 ```
-bundesbank-to-sqlite convert blz.db blz-aktuell-xls-data.xlsx
+bundesbank-to-sqlite convert blz.db blz-aktuell-xlsx-data.xlsx
 ```
 
 
@@ -45,7 +45,7 @@ datasette blz.db
 
 ## Example queries
 
-Run some queries in Datasette.
+Run some queries in [Datasette](https://datasette.io).
 
 ```
 http://localhost:8001/blz/bundesbank_blz?blz=10000000
